@@ -1,0 +1,24 @@
+.gride{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.leaderboard-score {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border: solid 2px black;
+    padding-right: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+   list-style-type: none;
+   margin-left: -35px;
+}
