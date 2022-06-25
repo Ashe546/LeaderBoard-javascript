@@ -7,18 +7,27 @@
   <title>Leader Board</title>
 </head>
 <body>
-  <div class="gride">
+  <div class="gride d-flex">
   <div>
   <div><h1>Leader Board</h1></div>
-  <div><h2>Resent scores</h2></div>
-  <button id="refresh">refrash</button>
+  <div class="recent d-flex" >
+    <h2>Recent scores</h2>
+    <button id="refresh"> Refresh </button>
+  </div>
   <div class="leaderboard-score"></div>
-    </div>
+  </div>
   <section> 
     <form class="form">
       <h1>Add your score</h1>
-      <input id="user" type="text" required>
-      <input id="score" type="number" required>
+      <div class="form__group field">
+        <input class="form__field" placeholder="Name" name="name" id="user" type="text" required>
+        <label for="name" class="form__label">Name</label>
+      </div>
+    
+      <div class="form__group field">
+        <input class="form__field" placeholder="score" name="score" id="score" type="number" required>
+        <label for="name" class="form__label">score</label>
+      </div> 
       <button type="button" id="submit">submit</button>
     </form>
   </section>
