@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 import show from './modules/show';
 
 const submit = document.getElementById('submit');
@@ -33,7 +33,7 @@ async function getScore() {
   const response = await fetch(request);
   const scores = await response.json();
   const { result } = scores;
-  document.querySelector('.leaderboard-score');
+  document.querySelector('.leaderboard-score').innerHTML = '';
   result.forEach((score) => {
     show(score.user, score.score);
   });
