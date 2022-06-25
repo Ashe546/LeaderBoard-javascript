@@ -3,20 +3,21 @@ $secondary: #38ef7d;
 $white: #fff;
 $gray: #9b9b9b;
 
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
 body {
   background-image: linear-gradient(to right, #008770, #174ae6);
 }
 
 .gride {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 40%;
 }
 
 .recent {
-  display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
