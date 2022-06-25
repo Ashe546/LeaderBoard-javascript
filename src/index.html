@@ -11,20 +11,15 @@
   <div>
   <div><h1>Leader Board</h1></div>
   <div><h2>Resent scores</h2></div>
-    <ul class="leaderboard-score">
-      <li>name: 100</li>
-      <li>name: 100</li>
-      <li>name: 100</li>
-      <li>name: 100</li>
-      <li>name: 100</li>
-    </ul>
+  <button id="refresh">refrash</button>
+  <div class="leaderboard-score"></div>
     </div>
   <section> 
     <form class="form">
       <h1>Add your score</h1>
-      <input type="text">
-      <input type="text">
-      <button>submit</button>
+      <input id="user" type="text" required>
+      <input id="score" type="number" required>
+      <button type="button" id="submit">submit</button>
     </form>
   </section>
 </div>
